@@ -4,7 +4,9 @@ import './Products.css'
 export default class Products extends Component {
   render() {
     return (
-      <div>Products</div>
+      <>
+      <section className="card-container"></section>
+      </>
     )
   }
 }
