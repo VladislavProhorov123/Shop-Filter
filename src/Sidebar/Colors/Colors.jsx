@@ -3,6 +3,10 @@ import './Colors.css'
 
 export default function Colors() {
   return (
-    <div>Colors</div>
+    <div className='ml'>
+      <h2 className="sidebar-title price-title">
+        
+      </h2>
+    </div>
   )
 }
