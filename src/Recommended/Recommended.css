@@ -1,0 +1,15 @@
+.recommended h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+
+.recommended {
+  margin-left: 20rem;
+}
+
+.recommended-btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
