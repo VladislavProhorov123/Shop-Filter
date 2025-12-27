@@ -11,7 +11,7 @@ export default function FilterProvider({ children }) {
   const filteredProducts = data.filter((product) => {
     const matchesQuery = product.title.toLowerCase().includes(query.toLowerCase())
 
-    const matchesCategory = category ? product.category === category : true
+    const matchesCategory = category ? product.company === category : true
     const matchesColor = color ? product.color : true
     const matchesPrice = price ? product.price <= price : true
 
