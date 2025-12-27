@@ -7,11 +7,11 @@ export default function Recommended() {
     <div className="recommended">
       <h2>Recommended</h2>
       <div className="recommended-btns">
-        <button className='btns'>All Products</button>
-        <button className='btns'>Nike</button>
-        <button className='btns'>Adidas</button>
-        <button className='btns'>Puma</button>
-        <button className='btns'>Vans</button>
+        <button className='btns' onClick={() => setCategory("")}>All Products</button>
+        <button className='btns' onClick={() => setCategory("Nike")}>Nike</button>
+        <button className='btns' onClick={() => setCategory("Adidas")}>Adidas</button>
+        <button className='btns' onClick={() => setCategory("Puma")}>Puma</button>
+        <button className='btns' onClick={() => setCategory("Vans")}>Vans</button>
       </div>
     </div>
     </>
