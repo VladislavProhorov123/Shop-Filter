@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Recommended.css'
+import { FilterContext } from '../context/FilterContext'
 
 export default function Recommended() {
+  const {setCategory} = useContext(FilterContext)
   return (
     <>
     <div className="recommended">

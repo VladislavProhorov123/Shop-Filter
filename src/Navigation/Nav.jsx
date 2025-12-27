@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Nav.css";
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineUserAdd, AiOutlineShoppingCart } from "react-icons/ai";
+import { FilterContext } from "../context/FilterContext";
 
 export default function Nav() {
+  const {query, setQuery} = useContext(FilterContext)
   return (
     <nav className="">
       <div className="nav-container">
         <input
+        value={query}
+        onChange={e => setQuery(e.target.value)}
           type="text"
           placeholder="Enter your search shoes..."
           className="search-input"

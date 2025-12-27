@@ -1,22 +1,18 @@
-import React, { Component } from 'react'
+import React, { useContext } from 'react'
+import { FilterContext } from '../context/FilterContext'
+import Card from '../components/Card'
 import './Products.css'
 
-import Card from '../components/Card'
-
-export default class Products extends Component {
-  render() {
-    return (
-      <>
-      <section className="card-container">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </section>
-      </>
-    )
-  }
+export default function Products() {
+  const {filteredProducts } = useContext(FilterContext)
+  return (
+    <>
+    <section className="card-container">
+      {filteredProducts.map((product, index) => (
+        <Card key={index} product={product} />
+      ))}
+    </section>
+    </>
+  )
 }
+
